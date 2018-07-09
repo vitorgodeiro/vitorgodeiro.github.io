@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head lang="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Chronic Wound Tissue Classification using Convolutional Networks and Color Space Reduction</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="apple-touch-icon" href="https://groups.csail.mit.edu/graphics/hdrnet/apple-touch-icon.png">
+    
+
+    <link rel="stylesheet" href="page_files/bootstrap_002.css">
+    <link rel="stylesheet" href="page_files/font-awesome.css">
+    <link rel="stylesheet" href="page_files/codemirror.css">
+    <link rel="stylesheet" href="page_files/app.css">
+
+    <link rel="stylesheet" href="page_files/bootstrap.css">
+
+    <script src="page_files/jquery.js"></script>
+    <script src="page_files/bootstrap.js"></script>
+    <script src="page_files/codemirror.js"></script>
+    <script src="page_files/clipboard.js"></script>
+    
+    <script src="page_files/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+              Chronic Wound Tissue Classification using<br> Convolutional Networks and Color Space Reduction<br> 
+                <small>
+                    MLSP 2018
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://vitorgodeiro.github.io/">
+                            Vitor Godeiro
+                        </a>
+                        <br>UFRN
+                    </li>
+                    <li>
+                        <a href="https://netolcc06.github.io/">
+                          José F. Silva Neto
+                        </a>
+                        <br>UFRN
+                    </li>
+                    <li>
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2177445">
+                          Bruno Motta De Carvalho
+                        </a>
+                        <br>UFRN
+                    </li>
+                    <li>
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1976579">
+                          Bruno Santana Da Silva
+                        </a>
+                        <br>UFRN
+                    </li>
+                    <li>
+                        <a href="#">
+                          Julianny Barreto Ferraz
+                        </a>
+                        <br>UFRN
+                    </li>
+                    <li>
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1715271">
+                          Renata Antonaci Gama
+                        </a>
+                        <br>UFRN
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center last">
+                <div class="col-lg-3 col-md-3 col-xs-3">
+          			<img class="img-fluid img-thumbnail" src="watershed01-min.jpg" alt="">
+        		</div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <img class="img-fluid img-thumbnail" src="watershed02-min.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <img class="img-fluid img-thumbnail" src="watershed03-min.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <img class="img-fluid img-thumbnail" src="watershed04-min.jpg" alt="">
+                </div>
+        		<div class="col-lg-3 col-md-3 col-xs-3">
+          			<img class="img-fluid img-thumbnail" src="classification01-min.jpg" alt="">
+        		</div>        		
+        		<div class="col-lg-3 col-md-3 col-xs-3">
+          			<img class="img-fluid img-thumbnail" src="classification02-min.jpg" alt="">
+        		</div>                
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <img class="img-fluid img-thumbnail" src="classification03-min.jpg" alt="">
+                </div>                
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <img class="img-fluid img-thumbnail" src="classification04-min.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                Chronic Wounds are ulcers presenting a difficult or nearly interrupted cicatrization process, and increase the risk of complications to the health and well-being of patients, like amputation and infections. The goal of this research is the development of a general noninvasive methodology for the segmentation and analysis of chronic wounds images by computing the wound areas affected by necrosis. Invasive techniques are usually used for this calculation, such as manual planimetry with plastic films. We investigated algorithms to perform the segmentation of wounds as well as the use of several convolutional networks for classifying tissue as Necrotic, Granulation or Slough. We tested four architectures: U-Net, Segnet, FCN8 and FCN32, and proposed a color space reduction methodology that increased the reported accuracies, specificities, sensitivities and Dice coefficients for all 4 networks, achieving very good levels.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                <!-- <h3 class="text&#45;center"> -->
+                    Downloads
+                </h3>
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="#">
+                                Paper
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Slides 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Pretrained models
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                
+                    <pre><code>@inproceedings{}</code></pre>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank the MLSP reviewers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
