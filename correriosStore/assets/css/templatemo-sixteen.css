@@ -217,6 +217,7 @@ header {
 }
 header .navbar {
 	padding: 17px 0px;
+	background-color: #034381!important;
 }
 .background-header .navbar {
 	padding: 17px 0px;
@@ -282,7 +283,7 @@ header .navbar {
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link.show,
 .navbar .navbar-nav .show>.nav-link {
-	color: #fff;
+	color: #fddb04;
 	padding-bottom: 25px;
 	border-bottom: 3px solid #f33f3f;
 }
@@ -317,16 +318,20 @@ header .navbar {
 }
 
 .banner-item-01 {
-	padding: 300px 0px;
-	background-image: url(../images/slide_01.jpg);
+	padding: 20% 0px;
+	max-width: 100%;
+  	max-height: 100%;
+	background-image: url(../images/banner1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .banner-item-02 {
-	padding: 300px 0px;
-	background-image: url(../images/slide_02.jpg);
+	padding: 20% 0px;
+	max-width: 100%;
+  	max-height: 100%;
+	background-image: url(../images/banner_2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
